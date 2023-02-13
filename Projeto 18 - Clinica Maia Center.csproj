@@ -24,12 +24,13 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://raw.githubusercontent.com/LucasMoreira1/Projeto-18---Clinica-Maia-Center/master/published/</InstallUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/LucasMoreira1/Projeto-18---Clinica-Maia-Center/master/published/</UpdateUrl>
     <SupportUrl>https://www.solucoesagility.com.br</SupportUrl>
     <TargetCulture>pt-BR</TargetCulture>
     <ProductName>Clinica Maia Center</ProductName>
     <PublisherName>Lucas Moreira</PublisherName>
     <SuiteName>Agility</SuiteName>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
