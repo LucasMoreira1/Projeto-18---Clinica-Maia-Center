@@ -30,7 +30,8 @@
     <ProductName>Clinica Maia Center</ProductName>
     <PublisherName>Lucas Moreira</PublisherName>
     <SuiteName>Agility</SuiteName>
-    <ApplicationRevision>3</ApplicationRevision>
+    <MinimumRequiredVersion>1.0.0.3</MinimumRequiredVersion>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
