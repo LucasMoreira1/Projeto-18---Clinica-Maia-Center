@@ -44,6 +44,7 @@
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnPaginaInicial = new System.Windows.Forms.Button();
             this.panelFormCentral = new System.Windows.Forms.Panel();
+            this.lblBemVindo = new System.Windows.Forms.Label();
             this.txtPermissaoLogin = new System.Windows.Forms.TextBox();
             this.txtNomeLogin = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -100,9 +101,9 @@
             this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.lblTitulo.Location = new System.Drawing.Point(343, 28);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(280, 51);
+            this.lblTitulo.Size = new System.Drawing.Size(0, 51);
             this.lblTitulo.TabIndex = 29;
-            this.lblTitulo.Text = "Página Inicial";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
@@ -261,6 +262,7 @@
             this.panelFormCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.panelFormCentral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelFormCentral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelFormCentral.Controls.Add(this.lblBemVindo);
             this.panelFormCentral.Controls.Add(this.txtPermissaoLogin);
             this.panelFormCentral.Controls.Add(this.txtNomeLogin);
             this.panelFormCentral.Controls.Add(this.dataGridView1);
@@ -269,9 +271,21 @@
             this.panelFormCentral.Size = new System.Drawing.Size(910, 592);
             this.panelFormCentral.TabIndex = 8;
             // 
+            // lblBemVindo
+            // 
+            this.lblBemVindo.AutoSize = true;
+            this.lblBemVindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.lblBemVindo.Location = new System.Drawing.Point(193, 276);
+            this.lblBemVindo.Name = "lblBemVindo";
+            this.lblBemVindo.Size = new System.Drawing.Size(226, 51);
+            this.lblBemVindo.TabIndex = 30;
+            this.lblBemVindo.Text = "Bem vindo";
+            this.lblBemVindo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // txtPermissaoLogin
             // 
-            this.txtPermissaoLogin.Location = new System.Drawing.Point(1108, 70);
+            this.txtPermissaoLogin.Location = new System.Drawing.Point(778, 44);
             this.txtPermissaoLogin.Name = "txtPermissaoLogin";
             this.txtPermissaoLogin.Size = new System.Drawing.Size(100, 20);
             this.txtPermissaoLogin.TabIndex = 5;
@@ -279,7 +293,7 @@
             // 
             // txtNomeLogin
             // 
-            this.txtNomeLogin.Location = new System.Drawing.Point(1108, 44);
+            this.txtNomeLogin.Location = new System.Drawing.Point(778, 18);
             this.txtNomeLogin.Name = "txtNomeLogin";
             this.txtNomeLogin.Size = new System.Drawing.Size(100, 20);
             this.txtNomeLogin.TabIndex = 5;
@@ -299,7 +313,7 @@
             this.Name = "FormPaginaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clinica Maia Center - Estética e Saúde";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormPaginaInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelFormTitulo.ResumeLayout(false);
             this.panelFormTitulo.PerformLayout();
@@ -331,5 +345,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblBemVindo;
     }
 }

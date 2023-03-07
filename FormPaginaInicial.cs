@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Word;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,7 +65,12 @@ namespace Projeto_18___Clinica_Maia_Center
         {
             System.Windows.Forms.Application.Exit();
         }
-        
+        // Mensagem de boas vindas.
+        private void FormPaginaInicial_Load(object sender, EventArgs e)
+        {
+            lblBemVindo.Text = "Bem vindo(a) de volta " + System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(txtNomeLogin.Text.ToLower());
+        }
+
         // Função para abrir a página dentro do painel central.
         public void OpenChildForm(Form childForm)
         {
@@ -115,7 +121,5 @@ namespace Projeto_18___Clinica_Maia_Center
             // Altera texto do título do sistema.
             //lblTitulo.Text = "Agenda";
         }
-
-
     }
 }

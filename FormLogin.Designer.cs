@@ -41,10 +41,14 @@
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panelFormTitulo = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelFormTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnTrocarSenha
@@ -112,6 +116,7 @@
             resources.ApplyResources(this.txtSenha, "txtSenha");
             this.txtSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
             // 
             // txtLogin
             // 
@@ -138,13 +143,38 @@
             this.label2.Name = "label2";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // panelFormTitulo
+            // 
+            this.panelFormTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.panelFormTitulo.Controls.Add(this.label3);
+            this.panelFormTitulo.Controls.Add(this.label2);
+            this.panelFormTitulo.Controls.Add(this.lblTitulo);
+            this.panelFormTitulo.Controls.Add(this.label1);
+            resources.ApplyResources(this.panelFormTitulo, "panelFormTitulo");
+            this.panelFormTitulo.Name = "panelFormTitulo";
+            this.panelFormTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelFormTitulo_MouseDown);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
+            this.label3.Name = "label3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // lblTitulo
+            // 
+            resources.ApplyResources(this.lblTitulo, "lblTitulo");
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.lblTitulo.Name = "lblTitulo";
+            // 
             // FormLogin
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panelFormTitulo);
             this.Controls.Add(this.btnTrocarSenha);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -152,7 +182,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -165,6 +194,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelFormTitulo.ResumeLayout(false);
+            this.panelFormTitulo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,6 +215,9 @@
         public System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panelFormTitulo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,28 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         public FormClientes()
         {
             InitializeComponent();
+        }
+        // Abrir formulário de cadastro.
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
+            FormCadastro formCadastro = new FormCadastro();
+            formCadastro.Show();
+        }
+
+        private void FormClientes_Load(object sender, EventArgs e)
+        {
+            CRUD.sql = "SELECT * FROM CLIENTES ORDER BY CODCLIENTE;";
+            CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+
+
+            DataTable dt = CRUD.PerformCRUD(CRUD.cmd);
+            DataGridView dgv = dataGridView1;
+
+            //dgv.MultiSelect = false;
+            //dgv.AutoGenerateColumns = true;
+            //dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.DataSource = dt;
+            dgv.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
         }
     }
 }
