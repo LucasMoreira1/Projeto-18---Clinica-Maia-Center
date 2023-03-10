@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,11 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         {
             InitializeComponent();
         }
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         // Comando SQL para Executar CRUD.
         private void Executar(string mySQL, string param)
         {
@@ -47,6 +53,50 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
 
             CRUD.sql = "INSERT INTO CLIENTES(nome, cpf, rg, telefone) Values(@nome, @cpf, @rg, @telefone);";
             Executar(CRUD.sql, "Insert");
+        }
+
+        private void btnCEP_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string xml = "http://cep.republicavirtual.com.br/web_cep.php?cep=@cep&formato=xml".Replace("@cep", txtCEP.Text);
+
+                ds.ReadXml(xml);
+
+                txtLogradouro.Text = ds.Tables[0].Rows[0]["logradouro"].ToString();
+                txtBairro.Text = ds.Tables[0].Rows[0]["bairro"].ToString();
+                txtCidade.Text = ds.Tables[0].Rows[0]["cidade"].ToString();
+                txtEstado.Text = ds.Tables[0].Rows[0]["uf"].ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro ao buscar CEP");
+            }
+        }
+
+        private void panelFormTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

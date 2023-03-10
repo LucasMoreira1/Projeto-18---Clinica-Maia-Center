@@ -58,7 +58,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Logo-com-fundo.ico</ApplicationIcon>
+    <ApplicationIcon>Arquivos\Logo-com-fundo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
@@ -99,17 +99,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CRUD.cs" />
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Classes\CRUD.cs" />
+    <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
+    <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPaginaInicial.cs">
+    <Compile Include="Forms\FormPaginaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPaginaInicial.Designer.cs">
+    <Compile Include="Forms\FormPaginaInicial.Designer.cs">
       <DependentUpon>FormPaginaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormAgenda.cs">
@@ -148,16 +148,16 @@
     <Compile Include="Forms\FormVisualizarLogs.Designer.cs">
       <DependentUpon>FormVisualizarLogs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logger.cs" />
+    <Compile Include="Classes\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormLogin.aa.resx">
+    <EmbeddedResource Include="Forms\FormLogin.aa.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPaginaInicial.resx">
+    <EmbeddedResource Include="Forms\FormPaginaInicial.resx">
       <DependentUpon>FormPaginaInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormAgenda.resx">
@@ -204,8 +204,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Logo-com-fundo.ico" />
-    <Content Include="Logo-sem-fundo.ico" />
+    <Content Include="Arquivos\Logo-com-fundo.ico" />
+    <Content Include="Arquivos\Logo-sem-fundo.ico" />
     <None Include="Resources\icons8-pesquisar-40.png" />
   </ItemGroup>
   <ItemGroup>
