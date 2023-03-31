@@ -146,6 +146,7 @@
             // panelFormTitulo
             // 
             this.panelFormTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.panelFormTitulo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelFormTitulo.Controls.Add(this.label3);
             this.panelFormTitulo.Controls.Add(this.label2);
             this.panelFormTitulo.Controls.Add(this.lblTitulo);
@@ -174,7 +175,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panelFormTitulo);
             this.Controls.Add(this.btnTrocarSenha);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -184,6 +184,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtLogin);
+            this.Controls.Add(this.panelFormTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

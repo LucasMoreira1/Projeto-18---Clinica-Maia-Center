@@ -33,11 +33,39 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
             DataTable dt = CRUD.PerformCRUD(CRUD.cmd);
             DataGridView dgv = dataGridView1;
 
-            //dgv.MultiSelect = false;
-            //dgv.AutoGenerateColumns = true;
-            //dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgv.DataSource = dt;
             dgv.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
+
+        private void txtPesquisar_Click(object sender, EventArgs e)
+        {
+            txtPesquisar.Text = "";
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            CRUD.sql = "SELECT * FROM CLIENTES WHERE Nome LIKE '%" + txtPesquisar.Text.Trim() + "%' ORDER BY NOME;";
+
+            CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+            DataTable dt = CRUD.PerformCRUD(CRUD.cmd);
+
+            DataGridView dgv = dataGridView1;
+
+            dgv.MultiSelect = false;
+            dgv.AutoGenerateColumns = true;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.DataSource = dt;
+
+            dgv.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dgv = dataGridView1;
+            FormAtualizarCadastro formAtualizarCadastro = new FormAtualizarCadastro();
+            formAtualizarCadastro.txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
+
+            formAtualizarCadastro.Show();
         }
     }
 }

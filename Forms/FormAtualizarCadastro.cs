@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -13,12 +12,13 @@ using System.Windows.Forms;
 
 namespace Projeto_18___Clinica_Maia_Center.Forms
 {
-    public partial class FormCadastro : Form
+    public partial class FormAtualizarCadastro : Form
     {
-        public FormCadastro()
+        public FormAtualizarCadastro()
         {
             InitializeComponent();
         }
+
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
@@ -103,6 +103,28 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void FormAtualizarCadastro_Load(object sender, EventArgs e)
+        {
+            CRUD.sql = "SELECT * FROM CLIENTES WHERE CODCLIENTE = '" + txtID.Text.Trim() + "'";
+            //CRUD.sql = "SELECT * FROM CLIENTES WHERE CODCLIENTE = '" + txtID.Text.Trim() + "' AND Senha = '" + txtSenha.Text.Trim() + "'";
+            CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+            DataTable dt = CRUD.PerformCRUD(CRUD.cmd);
+            DataGridView dgv = dataGridView1;
+
+            dgv.Visible = true;
+            dgv.AutoGenerateColumns = true;
+            dgv.DataSource = dt;
+
+            txtNome.Text = Convert.ToString(dgv.CurrentRow.Cells[1].Value);
+            txtCPF.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
+            txtRG.Text = Convert.ToString(dgv.CurrentRow.Cells[3].Value);
+            txtTelefone.Text = Convert.ToString(dgv.CurrentRow.Cells[4].Value);
+
+
+
+            dgv.Visible = false;
         }
     }
 }
