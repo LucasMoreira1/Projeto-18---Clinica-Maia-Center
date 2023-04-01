@@ -119,6 +119,7 @@
             this.btnSalvarCadastro.TabIndex = 0;
             this.btnSalvarCadastro.Text = "Informações Complementares";
             this.btnSalvarCadastro.UseVisualStyleBackColor = false;
+            this.btnSalvarCadastro.Click += new System.EventHandler(this.btnSalvarCadastro_Click);
             // 
             // lblTitulo
             // 

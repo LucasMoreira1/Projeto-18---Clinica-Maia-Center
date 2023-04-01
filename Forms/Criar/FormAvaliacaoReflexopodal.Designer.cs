@@ -82,7 +82,7 @@
             this.label6.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(757, 2);
+            this.label6.Location = new System.Drawing.Point(740, 2);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 23);
             this.label6.TabIndex = 27;
@@ -150,7 +150,7 @@
             this.btnSalvarCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvarCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvarCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnSalvarCadastro.Location = new System.Drawing.Point(293, 875);
+            this.btnSalvarCadastro.Location = new System.Drawing.Point(284, 875);
             this.btnSalvarCadastro.Name = "btnSalvarCadastro";
             this.btnSalvarCadastro.Size = new System.Drawing.Size(216, 44);
             this.btnSalvarCadastro.TabIndex = 44;
@@ -178,7 +178,7 @@
             this.groupBox4.Controls.Add(this.txtTerapeuta);
             this.groupBox4.Controls.Add(this.label25);
             this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.groupBox4.Location = new System.Drawing.Point(22, 142);
+            this.groupBox4.Location = new System.Drawing.Point(13, 142);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(752, 232);
             this.groupBox4.TabIndex = 51;
@@ -227,7 +227,7 @@
             this.label4.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(726, 3);
+            this.label4.Location = new System.Drawing.Point(709, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 23);
             this.label4.TabIndex = 30;
@@ -240,7 +240,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.lblTitulo.Location = new System.Drawing.Point(161, 38);
+            this.lblTitulo.Location = new System.Drawing.Point(152, 38);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(475, 51);
             this.lblTitulo.TabIndex = 29;
@@ -255,7 +255,7 @@
             this.label5.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(699, 2);
+            this.label5.Location = new System.Drawing.Point(682, 2);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(21, 23);
             this.label5.TabIndex = 28;
@@ -264,6 +264,7 @@
             // 
             // panelCadastro
             // 
+            this.panelCadastro.AutoScroll = true;
             this.panelCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.panelCadastro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelCadastro.Controls.Add(this.groupBox1);
@@ -279,7 +280,7 @@
             this.panelCadastro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCadastro.Location = new System.Drawing.Point(0, 0);
             this.panelCadastro.Name = "panelCadastro";
-            this.panelCadastro.Size = new System.Drawing.Size(800, 944);
+            this.panelCadastro.Size = new System.Drawing.Size(800, 768);
             this.panelCadastro.TabIndex = 53;
             this.panelCadastro.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelCadastro_MouseDown);
             // 
@@ -310,7 +311,7 @@
             this.groupBox1.Controls.Add(this.textBox15);
             this.groupBox1.Controls.Add(this.label36);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.groupBox1.Location = new System.Drawing.Point(22, 380);
+            this.groupBox1.Location = new System.Drawing.Point(13, 380);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(752, 464);
             this.groupBox1.TabIndex = 87;
@@ -561,7 +562,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(800, 944);
+            this.ClientSize = new System.Drawing.Size(800, 768);
             this.Controls.Add(this.panelCadastro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAvaliacaoReflexopodal";

@@ -313,6 +313,7 @@
             this.Name = "FormPaginaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clinica Maia Center - Estética e Saúde";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormPaginaInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelFormTitulo.ResumeLayout(false);

@@ -126,5 +126,12 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
             formInformacoesComplementares.txtID.Text = txtID.Text;
             formInformacoesComplementares.Show();
         }
+
+        private void btnSalvarCadastro_Click(object sender, EventArgs e)
+        {
+            FormInformacoesComplementares formInformacoesComplementares = new FormInformacoesComplementares();
+            formInformacoesComplementares.txtID.Text = txtID.Text;
+            formInformacoesComplementares.Show();
+        }
     }
 }
