@@ -37,14 +37,20 @@
             this.btnSalvarCadastro = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtQueixaCliente = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtObsAdicionais = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelCadastro = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtObsAdicionais = new System.Windows.Forms.TextBox();
-            this.txtQueixaCliente = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -62,12 +68,6 @@
             this.label34 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.panelCadastro.SuspendLayout();
@@ -185,6 +185,40 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Avaliação Reflexopodal";
             // 
+            // txtQueixaCliente
+            // 
+            this.txtQueixaCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtQueixaCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtQueixaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQueixaCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtQueixaCliente.Location = new System.Drawing.Point(12, 91);
+            this.txtQueixaCliente.Multiline = true;
+            this.txtQueixaCliente.Name = "txtQueixaCliente";
+            this.txtQueixaCliente.Size = new System.Drawing.Size(712, 48);
+            this.txtQueixaCliente.TabIndex = 86;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(182, 20);
+            this.label3.TabIndex = 84;
+            this.label3.Text = "Observações Adicionais:";
+            // 
+            // txtObsAdicionais
+            // 
+            this.txtObsAdicionais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtObsAdicionais.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtObsAdicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObsAdicionais.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtObsAdicionais.Location = new System.Drawing.Point(13, 165);
+            this.txtObsAdicionais.Multiline = true;
+            this.txtObsAdicionais.Name = "txtObsAdicionais";
+            this.txtObsAdicionais.Size = new System.Drawing.Size(712, 48);
+            this.txtObsAdicionais.TabIndex = 85;
+            // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -249,40 +283,6 @@
             this.panelCadastro.TabIndex = 53;
             this.panelCadastro.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelCadastro_MouseDown);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 20);
-            this.label3.TabIndex = 84;
-            this.label3.Text = "Observações Adicionais:";
-            // 
-            // txtObsAdicionais
-            // 
-            this.txtObsAdicionais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtObsAdicionais.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtObsAdicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObsAdicionais.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtObsAdicionais.Location = new System.Drawing.Point(13, 165);
-            this.txtObsAdicionais.Multiline = true;
-            this.txtObsAdicionais.Name = "txtObsAdicionais";
-            this.txtObsAdicionais.Size = new System.Drawing.Size(712, 48);
-            this.txtObsAdicionais.TabIndex = 85;
-            // 
-            // txtQueixaCliente
-            // 
-            this.txtQueixaCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtQueixaCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtQueixaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQueixaCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtQueixaCliente.Location = new System.Drawing.Point(12, 91);
-            this.txtQueixaCliente.Multiline = true;
-            this.txtQueixaCliente.Name = "txtQueixaCliente";
-            this.txtQueixaCliente.Size = new System.Drawing.Size(712, 48);
-            this.txtQueixaCliente.TabIndex = 86;
-            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -316,6 +316,70 @@
             this.groupBox1.TabIndex = 87;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Terapêutica Utilizada";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.textBox1.Location = new System.Drawing.Point(179, 356);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(545, 26);
+            this.textBox1.TabIndex = 145;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.textBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.textBox7.Location = new System.Drawing.Point(179, 309);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(545, 26);
+            this.textBox7.TabIndex = 144;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.textBox8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.textBox8.Location = new System.Drawing.Point(179, 268);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(545, 26);
+            this.textBox8.TabIndex = 143;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.textBox9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.textBox9.Location = new System.Drawing.Point(180, 228);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(544, 26);
+            this.textBox9.TabIndex = 142;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(11, 398);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 20);
+            this.label7.TabIndex = 141;
+            this.label7.Text = "Prioridades:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(266, 28);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(170, 20);
+            this.label13.TabIndex = 140;
+            this.label13.Text = "Com atenção especial:";
             // 
             // label12
             // 
@@ -492,74 +556,11 @@
             this.label36.TabIndex = 112;
             this.label36.Text = "Sistema completo:";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(266, 28);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(170, 20);
-            this.label13.TabIndex = 140;
-            this.label13.Text = "Com atenção especial:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(11, 398);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 20);
-            this.label7.TabIndex = 141;
-            this.label7.Text = "Prioridades:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.textBox1.Location = new System.Drawing.Point(179, 356);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(545, 26);
-            this.textBox1.TabIndex = 145;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.textBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.textBox7.Location = new System.Drawing.Point(179, 309);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(545, 26);
-            this.textBox7.TabIndex = 144;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.textBox8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.textBox8.Location = new System.Drawing.Point(179, 268);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(545, 26);
-            this.textBox8.TabIndex = 143;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.textBox9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.textBox9.Location = new System.Drawing.Point(180, 228);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(544, 26);
-            this.textBox9.TabIndex = 142;
-            // 
             // FormAvaliacaoReflexopodal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 944);
             this.Controls.Add(this.panelCadastro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
