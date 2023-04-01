@@ -33,15 +33,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClientes));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnPesquisar = new System.Windows.Forms.Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DATANASCIMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PROFISSAO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,9 +70,11 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Nome,
-            this.CPF,
-            this.RG,
-            this.Telefone});
+            this.DATANASCIMENTO,
+            this.Telefone,
+            this.EMAIL,
+            this.PROFISSAO,
+            this.CPF});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
@@ -102,41 +106,6 @@
             this.dataGridView1.TabIndex = 42;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "CODCLIENTE";
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // Nome
-            // 
-            this.Nome.DataPropertyName = "NOME";
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            // 
-            // CPF
-            // 
-            this.CPF.DataPropertyName = "CPF";
-            this.CPF.HeaderText = "CPF";
-            this.CPF.Name = "CPF";
-            this.CPF.ReadOnly = true;
-            // 
-            // RG
-            // 
-            this.RG.DataPropertyName = "RG";
-            this.RG.HeaderText = "RG";
-            this.RG.Name = "RG";
-            this.RG.ReadOnly = true;
-            // 
-            // Telefone
-            // 
-            this.Telefone.DataPropertyName = "TELEFONE";
-            this.Telefone.HeaderText = "Telefone";
-            this.Telefone.Name = "Telefone";
-            this.Telefone.ReadOnly = true;
-            // 
             // btnCadastro
             // 
             this.btnCadastro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -157,7 +126,8 @@
             // txtPesquisar
             // 
             this.txtPesquisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPesquisar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisar.ForeColor = System.Drawing.Color.White;
             this.txtPesquisar.Location = new System.Drawing.Point(12, 12);
@@ -165,8 +135,10 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(188, 44);
             this.txtPesquisar.TabIndex = 44;
-            this.txtPesquisar.Text = "Pesquisar...";
+            this.txtPesquisar.Text = "PESQUISAR...";
+            this.txtPesquisar.WordWrap = false;
             this.txtPesquisar.Click += new System.EventHandler(this.txtPesquisar_Click);
+            this.txtPesquisar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPesquisar_KeyDown);
             // 
             // btnEditar
             // 
@@ -179,6 +151,7 @@
             this.btnEditar.Size = new System.Drawing.Size(46, 44);
             this.btnEditar.TabIndex = 46;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnPesquisar
             // 
@@ -193,6 +166,55 @@
             this.btnPesquisar.TabIndex = 45;
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "CODCLIENTE";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // Nome
+            // 
+            this.Nome.DataPropertyName = "NOME";
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            // 
+            // DATANASCIMENTO
+            // 
+            this.DATANASCIMENTO.DataPropertyName = "DATANASCIMENTO";
+            this.DATANASCIMENTO.HeaderText = "Nascimento";
+            this.DATANASCIMENTO.Name = "DATANASCIMENTO";
+            this.DATANASCIMENTO.ReadOnly = true;
+            // 
+            // Telefone
+            // 
+            this.Telefone.DataPropertyName = "TELEFONE";
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.Name = "Telefone";
+            this.Telefone.ReadOnly = true;
+            // 
+            // EMAIL
+            // 
+            this.EMAIL.DataPropertyName = "EMAIL";
+            this.EMAIL.HeaderText = "E-Mail";
+            this.EMAIL.Name = "EMAIL";
+            this.EMAIL.ReadOnly = true;
+            // 
+            // PROFISSAO
+            // 
+            this.PROFISSAO.DataPropertyName = "PROFISSAO";
+            this.PROFISSAO.HeaderText = "Profissao";
+            this.PROFISSAO.Name = "PROFISSAO";
+            this.PROFISSAO.ReadOnly = true;
+            // 
+            // CPF
+            // 
+            this.CPF.DataPropertyName = "CPF";
+            this.CPF.HeaderText = "CPF";
+            this.CPF.Name = "CPF";
+            this.CPF.ReadOnly = true;
             // 
             // FormClientes
             // 
@@ -223,8 +245,10 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DATANASCIMENTO;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EMAIL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PROFISSAO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
     }
 }

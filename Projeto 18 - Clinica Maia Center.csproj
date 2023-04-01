@@ -31,7 +31,7 @@
     <PublisherName>Lucas Moreira</PublisherName>
     <SuiteName>Agility</SuiteName>
     <MinimumRequiredVersion>1.0.0.3</MinimumRequiredVersion>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -100,11 +100,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\CRUD.cs" />
-    <Compile Include="Forms\FormAtualizarCadastro.cs">
+    <Compile Include="Forms\Atualizar\FormAtualizarAvaliacaoReflexopodal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormAtualizarCadastro.Designer.cs">
+    <Compile Include="Forms\Atualizar\FormAtualizarAvaliacaoReflexopodal.Designer.cs">
+      <DependentUpon>FormAtualizarAvaliacaoReflexopodal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Atualizar\FormAtualizarCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Atualizar\FormAtualizarCadastro.Designer.cs">
       <DependentUpon>FormAtualizarCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Atualizar\FormAtualizarInformacoesComplementares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Atualizar\FormAtualizarInformacoesComplementares.Designer.cs">
+      <DependentUpon>FormAtualizarInformacoesComplementares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Criar\FormAvaliacaoReflexopodal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Criar\FormAvaliacaoReflexopodal.Designer.cs">
+      <DependentUpon>FormAvaliacaoReflexopodal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Criar\FormInformacoesComplementares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Criar\FormInformacoesComplementares.Designer.cs">
+      <DependentUpon>FormInformacoesComplementares.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
@@ -124,10 +148,10 @@
     <Compile Include="Forms\FormAgenda.Designer.cs">
       <DependentUpon>FormAgenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormCadastro.cs">
+    <Compile Include="Forms\Criar\FormCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormCadastro.Designer.cs">
+    <Compile Include="Forms\Criar\FormCadastro.Designer.cs">
       <DependentUpon>FormCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormClientes.cs">
@@ -157,8 +181,20 @@
     <Compile Include="Classes\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\FormAtualizarCadastro.resx">
+    <EmbeddedResource Include="Forms\Atualizar\FormAtualizarAvaliacaoReflexopodal.resx">
+      <DependentUpon>FormAtualizarAvaliacaoReflexopodal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Atualizar\FormAtualizarCadastro.resx">
       <DependentUpon>FormAtualizarCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Atualizar\FormAtualizarInformacoesComplementares.resx">
+      <DependentUpon>FormAtualizarInformacoesComplementares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Criar\FormAvaliacaoReflexopodal.resx">
+      <DependentUpon>FormAvaliacaoReflexopodal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Criar\FormInformacoesComplementares.resx">
+      <DependentUpon>FormInformacoesComplementares.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLogin.aa.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -172,7 +208,7 @@
     <EmbeddedResource Include="Forms\FormAgenda.resx">
       <DependentUpon>FormAgenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormCadastro.resx">
+    <EmbeddedResource Include="Forms\Criar\FormCadastro.resx">
       <DependentUpon>FormCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormClientes.resx">

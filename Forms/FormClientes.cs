@@ -44,7 +44,7 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            CRUD.sql = "SELECT * FROM CLIENTES WHERE Nome LIKE '%" + txtPesquisar.Text.Trim() + "%' ORDER BY NOME;";
+            CRUD.sql = "SELECT * FROM CLIENTES WHERE Nome LIKE '%" + txtPesquisar.Text.Trim() + "%' ORDER BY CODCLIENTE;";
 
             CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
             DataTable dt = CRUD.PerformCRUD(CRUD.cmd);
@@ -60,6 +60,21 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dgv = dataGridView1;
+            FormAtualizarCadastro formAtualizarCadastro = new FormAtualizarCadastro();
+            formAtualizarCadastro.txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
+
+            formAtualizarCadastro.Show();
+        }
+
+        private void txtPesquisar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btnPesquisar_Click(sender, e);
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
         {
             DataGridView dgv = dataGridView1;
             FormAtualizarCadastro formAtualizarCadastro = new FormAtualizarCadastro();
