@@ -47,6 +47,7 @@
             this.lblBemVindo = new System.Windows.Forms.Label();
             this.txtPermissaoLogin = new System.Windows.Forms.TextBox();
             this.txtNomeLogin = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelFormTitulo.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -162,6 +163,7 @@
             // 
             this.panelEsquerdo.AutoScroll = true;
             this.panelEsquerdo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.panelEsquerdo.Controls.Add(this.label4);
             this.panelEsquerdo.Controls.Add(this.btnVisualizarLogs);
             this.panelEsquerdo.Controls.Add(this.btnAgenda);
             this.panelEsquerdo.Controls.Add(this.btnDashboard);
@@ -299,6 +301,18 @@
             this.txtNomeLogin.TabIndex = 5;
             this.txtNomeLogin.Visible = false;
             // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.label4.Location = new System.Drawing.Point(3, 661);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(180, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "CNPJ: 19.591.008/0001-01";
+            // 
             // FormPaginaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,6 +335,7 @@
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelEsquerdo.ResumeLayout(false);
+            this.panelEsquerdo.PerformLayout();
             this.panelFormCentral.ResumeLayout(false);
             this.panelFormCentral.PerformLayout();
             this.ResumeLayout(false);
@@ -347,5 +362,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblBemVindo;
+        private System.Windows.Forms.Label label4;
     }
 }
