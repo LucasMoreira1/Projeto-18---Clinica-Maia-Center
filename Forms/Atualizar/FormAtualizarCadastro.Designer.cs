@@ -103,6 +103,7 @@
             this.label4.Size = new System.Drawing.Size(27, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "O";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnSalvarCadastro
             // 
@@ -147,6 +148,7 @@
             this.label5.Size = new System.Drawing.Size(21, 23);
             this.label5.TabIndex = 0;
             this.label5.Text = "_";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnCEP
             // 
@@ -458,6 +460,7 @@
             this.label6.Size = new System.Drawing.Size(28, 23);
             this.label6.TabIndex = 0;
             this.label6.Text = "X";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // groupBox1
             // 
