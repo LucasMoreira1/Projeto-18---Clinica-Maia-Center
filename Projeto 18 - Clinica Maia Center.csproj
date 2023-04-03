@@ -31,7 +31,7 @@
     <PublisherName>Lucas Moreira</PublisherName>
     <SuiteName>Agility</SuiteName>
     <MinimumRequiredVersion>1.0.0.3</MinimumRequiredVersion>
-    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -172,6 +172,18 @@
     <Compile Include="Forms\FormInicio.Designer.cs">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProduto.Designer.cs">
+      <DependentUpon>FormProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRetorno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRetorno.Designer.cs">
+      <DependentUpon>FormRetorno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormVisualizarLogs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +232,12 @@
     <EmbeddedResource Include="Forms\FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProduto.resx">
+      <DependentUpon>FormProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormRetorno.resx">
+      <DependentUpon>FormRetorno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormVisualizarLogs.resx">
       <DependentUpon>FormVisualizarLogs.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +279,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Calendar.v3">
+      <Version>1.60.0.2993</Version>
+    </PackageReference>
     <PackageReference Include="Google.Protobuf">
       <Version>3.21.9</Version>
     </PackageReference>
@@ -278,6 +299,9 @@
     </PackageReference>
     <PackageReference Include="Microsoft.SqlServer.Types">
       <Version>160.1000.6</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Web.WebView2">
+      <Version>1.0.1661.34</Version>
     </PackageReference>
     <PackageReference Include="MySql.Data">
       <Version>8.0.32</Version>

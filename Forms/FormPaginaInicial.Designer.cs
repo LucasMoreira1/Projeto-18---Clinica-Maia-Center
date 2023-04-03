@@ -38,16 +38,18 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelEsquerdo = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnVisualizarLogs = new System.Windows.Forms.Button();
             this.btnAgenda = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
+            this.btnProdutos = new System.Windows.Forms.Button();
+            this.btnRetorno = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnPaginaInicial = new System.Windows.Forms.Button();
             this.panelFormCentral = new System.Windows.Forms.Panel();
             this.lblBemVindo = new System.Windows.Forms.Label();
             this.txtPermissaoLogin = new System.Windows.Forms.TextBox();
             this.txtNomeLogin = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelFormTitulo.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -59,7 +61,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(5, 89);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(140, 33);
             this.dataGridView1.TabIndex = 4;
@@ -75,7 +77,7 @@
             this.panelFormTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelFormTitulo.Location = new System.Drawing.Point(354, 0);
             this.panelFormTitulo.Name = "panelFormTitulo";
-            this.panelFormTitulo.Size = new System.Drawing.Size(910, 91);
+            this.panelFormTitulo.Size = new System.Drawing.Size(910, 110);
             this.panelFormTitulo.TabIndex = 7;
             this.panelFormTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelFormTitulo_MouseDown);
             // 
@@ -167,14 +169,28 @@
             this.panelEsquerdo.Controls.Add(this.btnVisualizarLogs);
             this.panelEsquerdo.Controls.Add(this.btnAgenda);
             this.panelEsquerdo.Controls.Add(this.btnDashboard);
+            this.panelEsquerdo.Controls.Add(this.btnProdutos);
+            this.panelEsquerdo.Controls.Add(this.btnRetorno);
             this.panelEsquerdo.Controls.Add(this.btnClientes);
             this.panelEsquerdo.Controls.Add(this.btnPaginaInicial);
             this.panelEsquerdo.Controls.Add(this.panelLogo);
             this.panelEsquerdo.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEsquerdo.Location = new System.Drawing.Point(0, 0);
             this.panelEsquerdo.Name = "panelEsquerdo";
-            this.panelEsquerdo.Size = new System.Drawing.Size(354, 681);
+            this.panelEsquerdo.Size = new System.Drawing.Size(354, 875);
             this.panelEsquerdo.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.label4.Location = new System.Drawing.Point(12, 849);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(180, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "CNPJ: 19.591.008/0001-01";
             // 
             // btnVisualizarLogs
             // 
@@ -184,7 +200,7 @@
             this.btnVisualizarLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVisualizarLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVisualizarLogs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnVisualizarLogs.Location = new System.Drawing.Point(0, 603);
+            this.btnVisualizarLogs.Location = new System.Drawing.Point(0, 727);
             this.btnVisualizarLogs.Name = "btnVisualizarLogs";
             this.btnVisualizarLogs.Size = new System.Drawing.Size(354, 62);
             this.btnVisualizarLogs.TabIndex = 10;
@@ -200,7 +216,7 @@
             this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnAgenda.Location = new System.Drawing.Point(0, 541);
+            this.btnAgenda.Location = new System.Drawing.Point(0, 665);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.Size = new System.Drawing.Size(354, 62);
             this.btnAgenda.TabIndex = 9;
@@ -216,13 +232,45 @@
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnDashboard.Location = new System.Drawing.Point(0, 479);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 603);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(354, 62);
             this.btnDashboard.TabIndex = 8;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // btnProdutos
+            // 
+            this.btnProdutos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.btnProdutos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProdutos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
+            this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdutos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.btnProdutos.Location = new System.Drawing.Point(0, 541);
+            this.btnProdutos.Name = "btnProdutos";
+            this.btnProdutos.Size = new System.Drawing.Size(354, 62);
+            this.btnProdutos.TabIndex = 12;
+            this.btnProdutos.Text = "Produtos";
+            this.btnProdutos.UseVisualStyleBackColor = false;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
+            // 
+            // btnRetorno
+            // 
+            this.btnRetorno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.btnRetorno.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRetorno.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
+            this.btnRetorno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRetorno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRetorno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.btnRetorno.Location = new System.Drawing.Point(0, 479);
+            this.btnRetorno.Name = "btnRetorno";
+            this.btnRetorno.Size = new System.Drawing.Size(354, 62);
+            this.btnRetorno.TabIndex = 13;
+            this.btnRetorno.Text = "Retorno";
+            this.btnRetorno.UseVisualStyleBackColor = false;
+            this.btnRetorno.Click += new System.EventHandler(this.btnRetorno_Click);
             // 
             // btnClientes
             // 
@@ -268,9 +316,9 @@
             this.panelFormCentral.Controls.Add(this.txtPermissaoLogin);
             this.panelFormCentral.Controls.Add(this.txtNomeLogin);
             this.panelFormCentral.Controls.Add(this.dataGridView1);
-            this.panelFormCentral.Location = new System.Drawing.Point(354, 89);
+            this.panelFormCentral.Location = new System.Drawing.Point(354, 111);
             this.panelFormCentral.Name = "panelFormCentral";
-            this.panelFormCentral.Size = new System.Drawing.Size(910, 592);
+            this.panelFormCentral.Size = new System.Drawing.Size(910, 764);
             this.panelFormCentral.TabIndex = 8;
             // 
             // lblBemVindo
@@ -287,7 +335,7 @@
             // 
             // txtPermissaoLogin
             // 
-            this.txtPermissaoLogin.Location = new System.Drawing.Point(778, 44);
+            this.txtPermissaoLogin.Location = new System.Drawing.Point(788, 115);
             this.txtPermissaoLogin.Name = "txtPermissaoLogin";
             this.txtPermissaoLogin.Size = new System.Drawing.Size(100, 20);
             this.txtPermissaoLogin.TabIndex = 5;
@@ -295,30 +343,18 @@
             // 
             // txtNomeLogin
             // 
-            this.txtNomeLogin.Location = new System.Drawing.Point(778, 18);
+            this.txtNomeLogin.Location = new System.Drawing.Point(788, 89);
             this.txtNomeLogin.Name = "txtNomeLogin";
             this.txtNomeLogin.Size = new System.Drawing.Size(100, 20);
             this.txtNomeLogin.TabIndex = 5;
             this.txtNomeLogin.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.label4.Location = new System.Drawing.Point(3, 661);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 17);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "CNPJ: 19.591.008/0001-01";
             // 
             // FormPaginaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1264, 875);
             this.Controls.Add(this.panelFormTitulo);
             this.Controls.Add(this.panelEsquerdo);
             this.Controls.Add(this.panelFormCentral);
@@ -363,5 +399,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblBemVindo;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Button btnRetorno;
+        public System.Windows.Forms.Button btnProdutos;
     }
 }

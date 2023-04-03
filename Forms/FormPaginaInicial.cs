@@ -121,5 +121,15 @@ namespace Projeto_18___Clinica_Maia_Center
             // Altera texto do título do sistema.
             //lblTitulo.Text = "Agenda";
         }
+
+        private void btnRetorno_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormRetorno());
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormProduto());
+        }
     }
 }
