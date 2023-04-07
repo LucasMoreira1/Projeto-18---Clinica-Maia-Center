@@ -131,6 +131,19 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
             txtEstado.Text = Convert.ToString(dgv.CurrentRow.Cells[13].Value);
 
 
+            CRUD.sql = "SELECT * FROM COMPRAS WHERE CODCLIENTE = '" + txtID.Text.Trim() + "'";
+            CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+            DataTable dt3 = CRUD.PerformCRUD(CRUD.cmd);
+
+            dgv.Visible = true;
+            dgv.AutoGenerateColumns = true;
+            dgv.DataSource = dt3;
+
+            txtCodProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
+            txtNomeProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[3].Value);
+            txtValorProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[4].Value);
+
+
             dgv.Visible = false;
         }
 
@@ -157,6 +170,8 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
             FormAtualizarInformacoesComplementares formAtualizarInformacoesComplementares = new FormAtualizarInformacoesComplementares();
             formAtualizarInformacoesComplementares.txtID.Text = txtID.Text;
             formAtualizarInformacoesComplementares.Show();
+
+            this.Close();
         }
 
         private void btnCEP_Click(object sender, EventArgs e)
@@ -177,6 +192,28 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
             {
                 MessageBox.Show(ex.Message, "Erro ao buscar CEP");
             }
+        }
+
+        private void txtCodProduto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Pesquisar_produto();
+        }
+        private void Pesquisar_produto()
+        {
+            CRUD.sql = "SELECT * FROM PRODUTOS WHERE CODPRODUTO = '" + txtCodProduto.Text.Trim() + "'";
+            CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+            DataTable dt = CRUD.PerformCRUD(CRUD.cmd);
+            DataGridView dgv = dataGridView1;
+
+            dgv.Visible = true;
+            dgv.AutoGenerateColumns = true;
+            dgv.DataSource = dt;
+
+            txtNomeProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[1].Value);
+            txtValorProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
+
+            dgv.Visible = false;
         }
     }
 }

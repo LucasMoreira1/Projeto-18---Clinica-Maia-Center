@@ -29,21 +29,6 @@
         private void InitializeComponent()
         {
             this.panelCadastro = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txtQueixaCliente = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtObsAdicionais = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.txtTerapeuta = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnSalvarCadastro = new System.Windows.Forms.Button();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtMuscular = new System.Windows.Forms.TextBox();
             this.txtEsqueletico = new System.Windows.Forms.TextBox();
@@ -71,10 +56,25 @@
             this.label34 = new System.Windows.Forms.Label();
             this.txtNervoso = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtQueixaCliente = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtObsAdicionais = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.txtTerapeuta = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnSalvarCadastro = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panelCadastro.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelCadastro
@@ -98,194 +98,6 @@
             this.panelCadastro.Size = new System.Drawing.Size(800, 1003);
             this.panelCadastro.TabIndex = 54;
             this.panelCadastro.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelCadastro_MouseDown);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox4.Controls.Add(this.txtQueixaCliente);
-            this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Controls.Add(this.txtObsAdicionais);
-            this.groupBox4.Controls.Add(this.label32);
-            this.groupBox4.Controls.Add(this.txtTerapeuta);
-            this.groupBox4.Controls.Add(this.label25);
-            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.groupBox4.Location = new System.Drawing.Point(13, 142);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(752, 232);
-            this.groupBox4.TabIndex = 51;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Avaliação Reflexopodal";
-            // 
-            // txtQueixaCliente
-            // 
-            this.txtQueixaCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtQueixaCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtQueixaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQueixaCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtQueixaCliente.Location = new System.Drawing.Point(12, 91);
-            this.txtQueixaCliente.Multiline = true;
-            this.txtQueixaCliente.Name = "txtQueixaCliente";
-            this.txtQueixaCliente.Size = new System.Drawing.Size(712, 48);
-            this.txtQueixaCliente.TabIndex = 86;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 20);
-            this.label3.TabIndex = 84;
-            this.label3.Text = "Observações Adicionais:";
-            // 
-            // txtObsAdicionais
-            // 
-            this.txtObsAdicionais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtObsAdicionais.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtObsAdicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObsAdicionais.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtObsAdicionais.Location = new System.Drawing.Point(13, 165);
-            this.txtObsAdicionais.Multiline = true;
-            this.txtObsAdicionais.Name = "txtObsAdicionais";
-            this.txtObsAdicionais.Size = new System.Drawing.Size(712, 48);
-            this.txtObsAdicionais.TabIndex = 85;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(9, 68);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(137, 20);
-            this.label32.TabIndex = 54;
-            this.label32.Text = "Queixa do Cliente:";
-            // 
-            // txtTerapeuta
-            // 
-            this.txtTerapeuta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtTerapeuta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtTerapeuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTerapeuta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtTerapeuta.Location = new System.Drawing.Point(12, 39);
-            this.txtTerapeuta.Name = "txtTerapeuta";
-            this.txtTerapeuta.Size = new System.Drawing.Size(712, 26);
-            this.txtTerapeuta.TabIndex = 48;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(9, 16);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(182, 20);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Terapeuta Responsável:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(700, 95);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(74, 41);
-            this.dataGridView1.TabIndex = 47;
-            this.dataGridView1.Visible = false;
-            // 
-            // txtID
-            // 
-            this.txtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtID.Location = new System.Drawing.Point(124, 110);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(90, 26);
-            this.txtID.TabIndex = 28;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.label24.Location = new System.Drawing.Point(30, 110);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(26, 20);
-            this.label24.TabIndex = 27;
-            this.label24.Text = "ID";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(709, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 23);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "O";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // btnSalvarCadastro
-            // 
-            this.btnSalvarCadastro.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSalvarCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.btnSalvarCadastro.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
-            this.btnSalvarCadastro.FlatAppearance.BorderSize = 2;
-            this.btnSalvarCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvarCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvarCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnSalvarCadastro.Location = new System.Drawing.Point(290, 936);
-            this.btnSalvarCadastro.Name = "btnSalvarCadastro";
-            this.btnSalvarCadastro.Size = new System.Drawing.Size(216, 44);
-            this.btnSalvarCadastro.TabIndex = 44;
-            this.btnSalvarCadastro.Text = "Concluir Cadastro";
-            this.btnSalvarCadastro.UseVisualStyleBackColor = false;
-            this.btnSalvarCadastro.Click += new System.EventHandler(this.btnSalvarCadastro_Click);
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.lblTitulo.Location = new System.Drawing.Point(152, 38);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(475, 51);
-            this.lblTitulo.TabIndex = 29;
-            this.lblTitulo.Text = "Avaliação Reflexopodal";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(682, 2);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 23);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "_";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label6.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
-            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(740, 2);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 23);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "X";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // groupBox1
             // 
@@ -597,6 +409,195 @@
             this.label36.TabIndex = 112;
             this.label36.Text = "Sistema completo:";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox4.Controls.Add(this.txtQueixaCliente);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.txtObsAdicionais);
+            this.groupBox4.Controls.Add(this.label32);
+            this.groupBox4.Controls.Add(this.txtTerapeuta);
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.groupBox4.Location = new System.Drawing.Point(13, 142);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(752, 232);
+            this.groupBox4.TabIndex = 51;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Avaliação Reflexopodal";
+            // 
+            // txtQueixaCliente
+            // 
+            this.txtQueixaCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtQueixaCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtQueixaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQueixaCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtQueixaCliente.Location = new System.Drawing.Point(12, 91);
+            this.txtQueixaCliente.Multiline = true;
+            this.txtQueixaCliente.Name = "txtQueixaCliente";
+            this.txtQueixaCliente.Size = new System.Drawing.Size(712, 48);
+            this.txtQueixaCliente.TabIndex = 86;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(182, 20);
+            this.label3.TabIndex = 84;
+            this.label3.Text = "Observações Adicionais:";
+            // 
+            // txtObsAdicionais
+            // 
+            this.txtObsAdicionais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtObsAdicionais.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtObsAdicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObsAdicionais.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtObsAdicionais.Location = new System.Drawing.Point(13, 165);
+            this.txtObsAdicionais.Multiline = true;
+            this.txtObsAdicionais.Name = "txtObsAdicionais";
+            this.txtObsAdicionais.Size = new System.Drawing.Size(712, 48);
+            this.txtObsAdicionais.TabIndex = 85;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(9, 68);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(137, 20);
+            this.label32.TabIndex = 54;
+            this.label32.Text = "Queixa do Cliente:";
+            // 
+            // txtTerapeuta
+            // 
+            this.txtTerapeuta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtTerapeuta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtTerapeuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTerapeuta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtTerapeuta.Location = new System.Drawing.Point(12, 39);
+            this.txtTerapeuta.Name = "txtTerapeuta";
+            this.txtTerapeuta.Size = new System.Drawing.Size(712, 26);
+            this.txtTerapeuta.TabIndex = 48;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(9, 16);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(182, 20);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Terapeuta Responsável:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(700, 95);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(74, 41);
+            this.dataGridView1.TabIndex = 47;
+            this.dataGridView1.Visible = false;
+            // 
+            // txtID
+            // 
+            this.txtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtID.Location = new System.Drawing.Point(124, 110);
+            this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(90, 26);
+            this.txtID.TabIndex = 28;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.label24.Location = new System.Drawing.Point(30, 110);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(26, 20);
+            this.label24.TabIndex = 27;
+            this.label24.Text = "ID";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label4.Location = new System.Drawing.Point(709, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(27, 23);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "O";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // btnSalvarCadastro
+            // 
+            this.btnSalvarCadastro.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSalvarCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.btnSalvarCadastro.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
+            this.btnSalvarCadastro.FlatAppearance.BorderSize = 2;
+            this.btnSalvarCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvarCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.btnSalvarCadastro.Location = new System.Drawing.Point(290, 936);
+            this.btnSalvarCadastro.Name = "btnSalvarCadastro";
+            this.btnSalvarCadastro.Size = new System.Drawing.Size(216, 44);
+            this.btnSalvarCadastro.TabIndex = 44;
+            this.btnSalvarCadastro.Text = "Concluir Cadastro";
+            this.btnSalvarCadastro.UseVisualStyleBackColor = false;
+            this.btnSalvarCadastro.Click += new System.EventHandler(this.btnSalvarCadastro_Click);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.lblTitulo.Location = new System.Drawing.Point(152, 38);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(475, 51);
+            this.lblTitulo.TabIndex = 29;
+            this.lblTitulo.Text = "Avaliação Reflexopodal";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label5.Location = new System.Drawing.Point(682, 2);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 23);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "_";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label6.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(195)))), ((int)(((byte)(182)))));
+            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label6.Location = new System.Drawing.Point(740, 2);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(28, 23);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "X";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // FormAtualizarAvaliacaoReflexopodal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -611,11 +612,11 @@
             this.Load += new System.EventHandler(this.FormAtualizarAvaliacaoReflexopodal_Load);
             this.panelCadastro.ResumeLayout(false);
             this.panelCadastro.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }

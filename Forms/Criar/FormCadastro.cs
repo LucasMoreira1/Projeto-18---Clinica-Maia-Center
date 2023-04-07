@@ -97,6 +97,7 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
             formInformacoesComplementares.txtID.Text = txtID.Text;
             formInformacoesComplementares.Show();
 
+            this.Close();
             //MessageBox.Show("Cliente " + NumeroRegistro + " cadastrado com sucesso.", "Cadastro",
             //    MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -149,6 +150,28 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void txtCodProduto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Pesquisar_produto();
+        }
+        private void Pesquisar_produto()
+        {
+            CRUD.sql = "SELECT * FROM PRODUTOS WHERE CODPRODUTO = '" + txtCodProduto.Text.Trim() + "'";
+            CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+            DataTable dt = CRUD.PerformCRUD(CRUD.cmd);
+            DataGridView dgv = dataGridView1;
+
+            dgv.Visible = true;
+            dgv.AutoGenerateColumns = true;
+            dgv.DataSource = dt;
+
+            txtNomeProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[1].Value);
+            txtValorProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
+            
+            dgv.Visible = false;
         }
     }
 }

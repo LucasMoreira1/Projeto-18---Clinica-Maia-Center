@@ -60,6 +60,11 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
                 "Values(@CODCLIENTE, @TERAPEUTA, @QUEIXACLIENTE, @OBSADICIONAIS, @NERVOSO, @GLAUDULAR, @LINFATICO, @CIRULATORIO, @CARDIACO, @RESPIRATORIO, @DIGESTIVO, @URINARIO, @REPRODUTOR, @ESQUELETICO, @MUSCULAR, @PRIORIDADES);";
             Executar(CRUD.sql, "Insert");
 
+
+            MessageBox.Show("Cadastro realizado");
+
+            this.Close();
+
             //FormInformacoesComplementares formInformacoesComplementares = new FormInformacoesComplementares();
             //formInformacoesComplementares.txtID.Text = txtID.Text;
             //formInformacoesComplementares.Show();

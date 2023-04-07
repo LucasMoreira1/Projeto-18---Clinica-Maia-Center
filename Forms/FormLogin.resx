@@ -5702,14 +5702,11 @@
   <data name="txtSenha.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 327</value>
   </data>
-  <data name="txtSenha.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtSenha.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="txtSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 25</value>
+    <value>125, 17</value>
   </data>
   <data name="txtSenha.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>

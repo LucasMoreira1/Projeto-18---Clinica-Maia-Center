@@ -59,7 +59,12 @@ namespace Projeto_18___Clinica_Maia_Center.Forms.Atualizar
             CRUD.sql = "UPDATE AVALIACAOREFLEXOPODAL SET TERAPEUTA = @TERAPEUTA, QUEIXACLIENTE = @QUEIXACLIENTE, OBSADICIONAIS = @OBSADICIONAIS, NERVOSO = @NERVOSO, GLAUDULAR = @GLAUDULAR, LINFATICO = @LINFATICO, CIRULATORIO = @CIRULATORIO," +
                 " CARDIACO = @CARDIACO, RESPIRATORIO = @RESPIRATORIO, DIGESTIVO = @DIGESTIVO, URINARIO = @URINARIO, REPRODUTOR = @REPRODUTOR, ESQUELETICO = @ESQUELETICO, MUSCULAR = @MUSCULAR, PRIORIDADES = @PRIORIDADES WHERE CODCLIENTE = " + txtID.Text + ";";
             Executar(CRUD.sql, "Update");
-            
+
+
+            MessageBox.Show("Cadastro atualizado");
+
+            this.Close();
+
         }
 
         private void panelFormTitulo_MouseDown(object sender, MouseEventArgs e)

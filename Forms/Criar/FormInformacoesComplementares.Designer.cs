@@ -655,6 +655,7 @@
             this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.txtID.Location = new System.Drawing.Point(124, 110);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(90, 26);
             this.txtID.TabIndex = 1;
             // 

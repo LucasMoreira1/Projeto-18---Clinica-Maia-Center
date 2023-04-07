@@ -52,7 +52,6 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtValorProduto = new System.Windows.Forms.MaskedTextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txtCodProduto = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -83,6 +82,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelCadastro = new System.Windows.Forms.Panel();
+            this.txtValorProduto = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -355,6 +355,7 @@
             this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.txtID.Location = new System.Drawing.Point(124, 110);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(88, 26);
             this.txtID.TabIndex = 0;
             // 
@@ -386,17 +387,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Serviço/Produto";
             // 
-            // txtValorProduto
-            // 
-            this.txtValorProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtValorProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtValorProduto.Location = new System.Drawing.Point(629, 19);
-            this.txtValorProduto.Mask = "$0,000.00";
-            this.txtValorProduto.Name = "txtValorProduto";
-            this.txtValorProduto.Size = new System.Drawing.Size(94, 26);
-            this.txtValorProduto.TabIndex = 0;
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -416,6 +406,7 @@
             this.txtCodProduto.Name = "txtCodProduto";
             this.txtCodProduto.Size = new System.Drawing.Size(88, 26);
             this.txtCodProduto.TabIndex = 0;
+            this.txtCodProduto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCodProduto_KeyDown);
             // 
             // label27
             // 
@@ -757,6 +748,17 @@
             this.panelCadastro.Size = new System.Drawing.Size(800, 696);
             this.panelCadastro.TabIndex = 0;
             // 
+            // txtValorProduto
+            // 
+            this.txtValorProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtValorProduto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtValorProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtValorProduto.Location = new System.Drawing.Point(629, 19);
+            this.txtValorProduto.Name = "txtValorProduto";
+            this.txtValorProduto.Size = new System.Drawing.Size(94, 26);
+            this.txtValorProduto.TabIndex = 1;
+            // 
             // FormAtualizarCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -808,7 +810,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox3;
-        public System.Windows.Forms.MaskedTextBox txtValorProduto;
         private System.Windows.Forms.Label label23;
         public System.Windows.Forms.TextBox txtCodProduto;
         private System.Windows.Forms.Label label27;
@@ -840,5 +841,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelCadastro;
         public System.Windows.Forms.TextBox txtID;
+        public System.Windows.Forms.TextBox txtValorProduto;
     }
 }

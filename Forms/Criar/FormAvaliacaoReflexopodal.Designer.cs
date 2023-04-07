@@ -45,6 +45,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panelCadastro = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMuscular = new System.Windows.Forms.TextBox();
+            this.txtEsqueletico = new System.Windows.Forms.TextBox();
+            this.txtReprodutor = new System.Windows.Forms.TextBox();
             this.txtUrinario = new System.Windows.Forms.TextBox();
             this.txtDigestorio = new System.Windows.Forms.TextBox();
             this.txtRespiratorio = new System.Windows.Forms.TextBox();
@@ -68,9 +71,6 @@
             this.label34 = new System.Windows.Forms.Label();
             this.txtNervoso = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.txtMuscular = new System.Windows.Forms.TextBox();
-            this.txtEsqueletico = new System.Windows.Forms.TextBox();
-            this.txtReprodutor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.panelCadastro.SuspendLayout();
@@ -130,6 +130,7 @@
             this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.txtID.Location = new System.Drawing.Point(124, 110);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(90, 26);
             this.txtID.TabIndex = 28;
             // 
@@ -323,6 +324,39 @@
             this.groupBox1.TabIndex = 87;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Terapêutica Utilizada";
+            // 
+            // txtMuscular
+            // 
+            this.txtMuscular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtMuscular.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtMuscular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMuscular.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtMuscular.Location = new System.Drawing.Point(180, 397);
+            this.txtMuscular.Name = "txtMuscular";
+            this.txtMuscular.Size = new System.Drawing.Size(545, 26);
+            this.txtMuscular.TabIndex = 148;
+            // 
+            // txtEsqueletico
+            // 
+            this.txtEsqueletico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtEsqueletico.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtEsqueletico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsqueletico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtEsqueletico.Location = new System.Drawing.Point(180, 365);
+            this.txtEsqueletico.Name = "txtEsqueletico";
+            this.txtEsqueletico.Size = new System.Drawing.Size(545, 26);
+            this.txtEsqueletico.TabIndex = 147;
+            // 
+            // txtReprodutor
+            // 
+            this.txtReprodutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtReprodutor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtReprodutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReprodutor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtReprodutor.Location = new System.Drawing.Point(180, 331);
+            this.txtReprodutor.Name = "txtReprodutor";
+            this.txtReprodutor.Size = new System.Drawing.Size(545, 26);
+            this.txtReprodutor.TabIndex = 146;
             // 
             // txtUrinario
             // 
@@ -563,39 +597,6 @@
             this.label36.Size = new System.Drawing.Size(164, 24);
             this.label36.TabIndex = 112;
             this.label36.Text = "Sistema completo:";
-            // 
-            // txtMuscular
-            // 
-            this.txtMuscular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtMuscular.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtMuscular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMuscular.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtMuscular.Location = new System.Drawing.Point(180, 397);
-            this.txtMuscular.Name = "txtMuscular";
-            this.txtMuscular.Size = new System.Drawing.Size(545, 26);
-            this.txtMuscular.TabIndex = 148;
-            // 
-            // txtEsqueletico
-            // 
-            this.txtEsqueletico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtEsqueletico.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtEsqueletico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsqueletico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtEsqueletico.Location = new System.Drawing.Point(180, 365);
-            this.txtEsqueletico.Name = "txtEsqueletico";
-            this.txtEsqueletico.Size = new System.Drawing.Size(545, 26);
-            this.txtEsqueletico.TabIndex = 147;
-            // 
-            // txtReprodutor
-            // 
-            this.txtReprodutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtReprodutor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtReprodutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReprodutor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtReprodutor.Location = new System.Drawing.Point(180, 331);
-            this.txtReprodutor.Name = "txtReprodutor";
-            this.txtReprodutor.Size = new System.Drawing.Size(545, 26);
-            this.txtReprodutor.TabIndex = 146;
             // 
             // FormAvaliacaoReflexopodal
             // 

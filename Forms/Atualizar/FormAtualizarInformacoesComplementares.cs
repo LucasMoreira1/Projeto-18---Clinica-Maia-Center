@@ -67,6 +67,8 @@ namespace Projeto_18___Clinica_Maia_Center.Forms.Atualizar
             FormAtualizarAvaliacaoReflexopodal formAtualizarAvaliacaoReflexopodal = new FormAtualizarAvaliacaoReflexopodal();
             formAtualizarAvaliacaoReflexopodal.txtID.Text = txtID.Text;
             formAtualizarAvaliacaoReflexopodal.Show();
+
+            this.Close();
         }
 
         private void panelFormTitulo_MouseDown(object sender, MouseEventArgs e)
