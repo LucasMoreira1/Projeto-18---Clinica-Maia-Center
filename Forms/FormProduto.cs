@@ -32,8 +32,7 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
             CRUD.cmd.Parameters.AddWithValue("nome_produto", txtNomeProduto.Text.Trim());
             CRUD.cmd.Parameters.AddWithValue("valor_produto", txtValorProduto.Text.Trim());
         }
-
-        private void FormProduto_Load(object sender, EventArgs e)
+        private void Carregar_produtos()
         {
             CRUD.sql = "SELECT * FROM PRODUTOS ORDER BY CODPRODUTO;";
             CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
@@ -44,6 +43,10 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
 
             dgv.DataSource = dt;
             dgv.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
+        private void FormProduto_Load(object sender, EventArgs e)
+        {
+            Carregar_produtos();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -79,6 +82,8 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
 
             MessageBox.Show("Produto: " + txtNomeProduto.Text + ". Cadastrado com sucesso.", "Cadastro",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Carregar_produtos();
         }
 
         private void btnEditarProduto_Click(object sender, EventArgs e)
@@ -106,6 +111,15 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dgv = dataGridView1;
+
+            txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
+            txtNomeProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[1].Value);
+            txtValorProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView dgv = dataGridView1;
 

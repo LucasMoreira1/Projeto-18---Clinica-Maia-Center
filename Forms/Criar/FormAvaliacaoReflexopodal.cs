@@ -35,16 +35,29 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         private void AddParametros(string str)
         {
             //Identificação Autor
-            CRUD.cmd.Parameters.AddWithValue("ID", txtID.Text.Trim());
-            CRUD.cmd.Parameters.AddWithValue("Terapeuta", txtTerapeuta.Text.Trim());
-            CRUD.cmd.Parameters.AddWithValue("QueixaCliente", txtQueixaCliente.Text.Trim());
-            CRUD.cmd.Parameters.AddWithValue("ObsAdicionais", txtObsAdicionais.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("CODCLIENTE", txtID.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("TERAPEUTA", txtTerapeuta.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("QUEIXACLIENTE", txtQueixaCliente.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("OBSADICIONAIS", txtObsAdicionais.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("NERVOSO", txtNervoso.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("GLAUDULAR", txtGlandular.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("LINFATICO", txtLinfatico.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("CIRULATORIO", txtCirculatorio.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("CARDIACO", txtCardiaco.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("RESPIRATORIO", txtRespiratorio.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("DIGESTIVO", txtDigestorio.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("URINARIO", txtUrinario.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("REPRODUTOR", txtReprodutor.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("ESQUELETICO", txtEsqueletico.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("MUSCULAR", txtMuscular.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("PRIORIDADES", txtPrioridades.Text.Trim());
 
         }
         // INSERT dos dados. Cadastro Cliente.
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
-            CRUD.sql = "INSERT INTO AVALIACAOREFLEXOPODAL(CODCLIENTE, TERAPEUTA, QUEIXACLIENTE, OBSADICIONAIS) Values(@ID, @Terapeuta, @QueixaCliente, @ObsAdicionais);";
+            CRUD.sql = "INSERT INTO AVALIACAOREFLEXOPODAL(CODCLIENTE, TERAPEUTA, QUEIXACLIENTE, OBSADICIONAIS, NERVOSO, GLAUDULAR, LINFATICO, CIRULATORIO, CARDIACO, RESPIRATORIO, DIGESTIVO, URINARIO, REPRODUTOR, ESQUELETICO, MUSCULAR, PRIORIDADES) " +
+                "Values(@CODCLIENTE, @TERAPEUTA, @QUEIXACLIENTE, @OBSADICIONAIS, @NERVOSO, @GLAUDULAR, @LINFATICO, @CIRULATORIO, @CARDIACO, @RESPIRATORIO, @DIGESTIVO, @URINARIO, @REPRODUTOR, @ESQUELETICO, @MUSCULAR, @PRIORIDADES);";
             Executar(CRUD.sql, "Insert");
 
             //FormInformacoesComplementares formInformacoesComplementares = new FormInformacoesComplementares();

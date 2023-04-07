@@ -35,21 +35,31 @@ namespace Projeto_18___Clinica_Maia_Center.Forms.Atualizar
         private void AddParametros(string str)
         {
             //Identificação Autor
-            CRUD.cmd.Parameters.AddWithValue("ID", txtID.Text.Trim());
-            CRUD.cmd.Parameters.AddWithValue("Terapeuta", txtTerapeuta.Text.Trim());
-            CRUD.cmd.Parameters.AddWithValue("QueixaCliente", txtQueixaCliente.Text.Trim());
-            CRUD.cmd.Parameters.AddWithValue("ObsAdicionais", txtObsAdicionais.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("CODCLIENTE", txtID.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("TERAPEUTA", txtTerapeuta.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("QUEIXACLIENTE", txtQueixaCliente.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("OBSADICIONAIS", txtObsAdicionais.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("NERVOSO", txtNervoso.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("GLAUDULAR", txtGlandular.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("LINFATICO", txtLinfatico.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("CIRULATORIO", txtCirculatorio.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("CARDIACO", txtCardiaco.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("RESPIRATORIO", txtRespiratorio.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("DIGESTIVO", txtDigestorio.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("URINARIO", txtUrinario.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("REPRODUTOR", txtReprodutor.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("ESQUELETICO", txtEsqueletico.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("MUSCULAR", txtMuscular.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("PRIORIDADES", txtPrioridades.Text.Trim());
 
         }
         // INSERT dos dados. Cadastro Cliente.
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
-            CRUD.sql = "INSERT INTO AVALIACAOREFLEXOPODAL(CODCLIENTE, TERAPEUTA, QUEIXACLIENTE, OBSADICIONAIS) Values(@ID, @Terapeuta, @QueixaCliente, @ObsAdicionais);";
-            Executar(CRUD.sql, "Insert");
-
-            //FormInformacoesComplementares formInformacoesComplementares = new FormInformacoesComplementares();
-            //formInformacoesComplementares.txtID.Text = txtID.Text;
-            //formInformacoesComplementares.Show();
+            CRUD.sql = "UPDATE AVALIACAOREFLEXOPODAL SET TERAPEUTA = @TERAPEUTA, QUEIXACLIENTE = @QUEIXACLIENTE, OBSADICIONAIS = @OBSADICIONAIS, NERVOSO = @NERVOSO, GLAUDULAR = @GLAUDULAR, LINFATICO = @LINFATICO, CIRULATORIO = @CIRULATORIO," +
+                " CARDIACO = @CARDIACO, RESPIRATORIO = @RESPIRATORIO, DIGESTIVO = @DIGESTIVO, URINARIO = @URINARIO, REPRODUTOR = @REPRODUTOR, ESQUELETICO = @ESQUELETICO, MUSCULAR = @MUSCULAR, PRIORIDADES = @PRIORIDADES WHERE CODCLIENTE = " + txtID.Text + ";";
+            Executar(CRUD.sql, "Update");
+            
         }
 
         private void panelFormTitulo_MouseDown(object sender, MouseEventArgs e)
@@ -84,24 +94,35 @@ namespace Projeto_18___Clinica_Maia_Center.Forms.Atualizar
 
         private void FormAtualizarAvaliacaoReflexopodal_Load(object sender, EventArgs e)
         {
-            //CRUD.sql = "SELECT * FROM CLIENTES WHERE CODCLIENTE = '" + txtID.Text.Trim() + "'";
-            ////CRUD.sql = "SELECT * FROM CLIENTES WHERE CODCLIENTE = '" + txtID.Text.Trim() + "' AND Senha = '" + txtSenha.Text.Trim() + "'";
-            //CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
-            //DataTable dt = CRUD.PerformCRUD(CRUD.cmd);
-            //DataGridView dgv = dataGridView1;
+            CRUD.sql = "SELECT * FROM AVALIACAOREFLEXOPODAL WHERE CODCLIENTE = '" + txtID.Text.Trim() + "'";
+            //CRUD.sql = "SELECT * FROM CLIENTES WHERE CODCLIENTE = '" + txtID.Text.Trim() + "' AND Senha = '" + txtSenha.Text.Trim() + "'";
+            CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+            DataTable dt = CRUD.PerformCRUD(CRUD.cmd);
+            DataGridView dgv = dataGridView1;
 
-            //dgv.Visible = true;
-            //dgv.AutoGenerateColumns = true;
-            //dgv.DataSource = dt;
+            dgv.Visible = true;
+            dgv.AutoGenerateColumns = true;
+            dgv.DataSource = dt;
 
-            ////txtNome.Text = Convert.ToString(dgv.CurrentRow.Cells[1].Value);
-            ////txtCPF.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
-            ////txtRG.Text = Convert.ToString(dgv.CurrentRow.Cells[3].Value);
-            ////txtTelefone.Text = Convert.ToString(dgv.CurrentRow.Cells[4].Value);
+            txtTerapeuta.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
+            txtQueixaCliente.Text = Convert.ToString(dgv.CurrentRow.Cells[3].Value);
+            txtObsAdicionais.Text = Convert.ToString(dgv.CurrentRow.Cells[4].Value);
+            txtNervoso.Text = Convert.ToString(dgv.CurrentRow.Cells[5].Value);
+
+            txtGlandular.Text = Convert.ToString(dgv.CurrentRow.Cells[6].Value);
+            txtLinfatico.Text = Convert.ToString(dgv.CurrentRow.Cells[7].Value);
+            txtCirculatorio.Text = Convert.ToString(dgv.CurrentRow.Cells[8].Value);
+            txtCardiaco.Text = Convert.ToString(dgv.CurrentRow.Cells[9].Value);
+            txtRespiratorio.Text = Convert.ToString(dgv.CurrentRow.Cells[10].Value);
+            txtDigestorio.Text = Convert.ToString(dgv.CurrentRow.Cells[11].Value);
+            txtUrinario.Text = Convert.ToString(dgv.CurrentRow.Cells[12].Value);
+            txtReprodutor.Text = Convert.ToString(dgv.CurrentRow.Cells[13].Value);
+            txtEsqueletico.Text = Convert.ToString(dgv.CurrentRow.Cells[14].Value);
+            txtMuscular.Text = Convert.ToString(dgv.CurrentRow.Cells[15].Value);
+            txtPrioridades.Text = Convert.ToString(dgv.CurrentRow.Cells[16].Value);
 
 
-
-            //dgv.Visible = false;
+            dgv.Visible = false;
         }
     }
 }

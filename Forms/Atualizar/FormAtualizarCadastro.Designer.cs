@@ -164,6 +164,7 @@
             this.btnCEP.TabIndex = 0;
             this.btnCEP.Text = "Buscar CEP";
             this.btnCEP.UseVisualStyleBackColor = false;
+            this.btnCEP.Click += new System.EventHandler(this.btnCEP_Click);
             // 
             // txtCEP
             // 
