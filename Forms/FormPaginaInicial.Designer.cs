@@ -43,7 +43,6 @@
             this.btnAgenda = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
-            this.btnRetorno = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnPaginaInicial = new System.Windows.Forms.Button();
             this.panelFormCentral = new System.Windows.Forms.Panel();
@@ -170,7 +169,6 @@
             this.panelEsquerdo.Controls.Add(this.btnAgenda);
             this.panelEsquerdo.Controls.Add(this.btnDashboard);
             this.panelEsquerdo.Controls.Add(this.btnProdutos);
-            this.panelEsquerdo.Controls.Add(this.btnRetorno);
             this.panelEsquerdo.Controls.Add(this.btnClientes);
             this.panelEsquerdo.Controls.Add(this.btnPaginaInicial);
             this.panelEsquerdo.Controls.Add(this.panelLogo);
@@ -200,7 +198,7 @@
             this.btnVisualizarLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVisualizarLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVisualizarLogs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnVisualizarLogs.Location = new System.Drawing.Point(0, 727);
+            this.btnVisualizarLogs.Location = new System.Drawing.Point(0, 665);
             this.btnVisualizarLogs.Name = "btnVisualizarLogs";
             this.btnVisualizarLogs.Size = new System.Drawing.Size(354, 62);
             this.btnVisualizarLogs.TabIndex = 10;
@@ -216,7 +214,7 @@
             this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnAgenda.Location = new System.Drawing.Point(0, 665);
+            this.btnAgenda.Location = new System.Drawing.Point(0, 603);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.Size = new System.Drawing.Size(354, 62);
             this.btnAgenda.TabIndex = 9;
@@ -232,7 +230,7 @@
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnDashboard.Location = new System.Drawing.Point(0, 603);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 541);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(354, 62);
             this.btnDashboard.TabIndex = 8;
@@ -248,29 +246,13 @@
             this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdutos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnProdutos.Location = new System.Drawing.Point(0, 541);
+            this.btnProdutos.Location = new System.Drawing.Point(0, 479);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Size = new System.Drawing.Size(354, 62);
             this.btnProdutos.TabIndex = 12;
             this.btnProdutos.Text = "Produtos";
             this.btnProdutos.UseVisualStyleBackColor = false;
             this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
-            // 
-            // btnRetorno
-            // 
-            this.btnRetorno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.btnRetorno.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRetorno.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
-            this.btnRetorno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRetorno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRetorno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnRetorno.Location = new System.Drawing.Point(0, 479);
-            this.btnRetorno.Name = "btnRetorno";
-            this.btnRetorno.Size = new System.Drawing.Size(354, 62);
-            this.btnRetorno.TabIndex = 13;
-            this.btnRetorno.Text = "Retorno";
-            this.btnRetorno.UseVisualStyleBackColor = false;
-            this.btnRetorno.Click += new System.EventHandler(this.btnRetorno_Click);
             // 
             // btnClientes
             // 
@@ -399,7 +381,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblBemVindo;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Button btnRetorno;
         public System.Windows.Forms.Button btnProdutos;
     }
 }

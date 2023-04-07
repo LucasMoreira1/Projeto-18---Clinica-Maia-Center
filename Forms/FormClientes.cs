@@ -82,5 +82,64 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
 
             formAtualizarCadastro.Show();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dgv = dataGridView1;
+            txtCODCLIENTE.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            DataGridView dgv = dataGridView1;
+
+            if (dgv.Rows.Count == 0)
+            {
+                return;
+            }
+            if (string.IsNullOrEmpty(txtCODCLIENTE.Text))
+            {
+                MessageBox.Show("Por favor, selecione um item da lista.", "Deletar dados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            int clienteSelecionado = Convert.ToInt32(txtCODCLIENTE.Text);
+
+
+            if (MessageBox.Show("Tem certeza que deseja deletar os dados selecionados?", "Deletar Dados",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                CRUD.sql = "DELETE FROM CLIENTES WHERE CODCLIENTE = " + clienteSelecionado + "";
+                CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+                CRUD.PerformCRUD(CRUD.cmd);
+
+                CRUD.sql = "DELETE FROM AVALIACAOREFLEXOPODAL WHERE CODCLIENTE = " + clienteSelecionado + "";
+                CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+                CRUD.PerformCRUD(CRUD.cmd);
+
+                CRUD.sql = "DELETE FROM ADICIONAIS_CADASTRO WHERE CODCLIENTE = " + clienteSelecionado + "";
+                CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+                CRUD.PerformCRUD(CRUD.cmd);
+
+                CRUD.sql = "DELETE FROM INFOCOMPLEMENTARES WHERE CODCLIENTE = " + clienteSelecionado + "";
+                CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+                CRUD.PerformCRUD(CRUD.cmd);
+
+                MessageBox.Show("Cliente deletado com sucesso.", "Deletar dados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //loadData();
+            }
+        }
+
+        private void btnRetorno_Click(object sender, EventArgs e)
+        {
+            DataGridView dgv = dataGridView1;
+            FormRetorno formRetorno = new FormRetorno();
+            formRetorno.txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
+            formRetorno.txtNome.Text = Convert.ToString(dgv.CurrentRow.Cells[1].Value);
+
+            formRetorno.Show();
+        }
     }
 }

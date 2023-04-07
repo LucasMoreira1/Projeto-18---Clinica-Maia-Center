@@ -37,7 +37,7 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         {
             //Identificação Autor
             CRUD.cmd.Parameters.AddWithValue("nome", txtNome.Text.Trim());
-            CRUD.cmd.Parameters.AddWithValue("datanascimento", txtDataNasc.Text.Trim());
+            CRUD.cmd.Parameters.AddWithValue("datanascimento", Convert.ToDateTime(txtDataNasc.Text.Trim()));
             CRUD.cmd.Parameters.AddWithValue("telefone", txtTelefone.Text.Trim());
             CRUD.cmd.Parameters.AddWithValue("email", txtEmail.Text.Trim());
             CRUD.cmd.Parameters.AddWithValue("profissao", txtProfissao.Text.Trim());

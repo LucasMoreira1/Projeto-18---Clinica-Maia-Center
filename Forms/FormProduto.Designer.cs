@@ -41,7 +41,7 @@
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEditarProduto = new System.Windows.Forms.Button();
+            this.btnAtualizarProduto = new System.Windows.Forms.Button();
             this.btnExcluirProduto = new System.Windows.Forms.Button();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -183,7 +183,6 @@
             this.dataGridView1.TabIndex = 43;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // ID
             // 
@@ -206,22 +205,22 @@
             this.Valor.Name = "Valor";
             this.Valor.ReadOnly = true;
             // 
-            // btnEditarProduto
+            // btnAtualizarProduto
             // 
-            this.btnEditarProduto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEditarProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.btnEditarProduto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
-            this.btnEditarProduto.FlatAppearance.BorderSize = 2;
-            this.btnEditarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnEditarProduto.Location = new System.Drawing.Point(283, 138);
-            this.btnEditarProduto.Name = "btnEditarProduto";
-            this.btnEditarProduto.Size = new System.Drawing.Size(250, 44);
-            this.btnEditarProduto.TabIndex = 44;
-            this.btnEditarProduto.Text = "Editar Produto";
-            this.btnEditarProduto.UseVisualStyleBackColor = false;
-            this.btnEditarProduto.Click += new System.EventHandler(this.btnEditarProduto_Click);
+            this.btnAtualizarProduto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAtualizarProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.btnAtualizarProduto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
+            this.btnAtualizarProduto.FlatAppearance.BorderSize = 2;
+            this.btnAtualizarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtualizarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizarProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.btnAtualizarProduto.Location = new System.Drawing.Point(283, 138);
+            this.btnAtualizarProduto.Name = "btnAtualizarProduto";
+            this.btnAtualizarProduto.Size = new System.Drawing.Size(250, 44);
+            this.btnAtualizarProduto.TabIndex = 44;
+            this.btnAtualizarProduto.Text = "Atualizar Produto";
+            this.btnAtualizarProduto.UseVisualStyleBackColor = false;
+            this.btnAtualizarProduto.Click += new System.EventHandler(this.btnAtualizarProduto_Click);
             // 
             // btnExcluirProduto
             // 
@@ -274,7 +273,7 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnExcluirProduto);
-            this.Controls.Add(this.btnEditarProduto);
+            this.Controls.Add(this.btnAtualizarProduto);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtValorProduto);
             this.Controls.Add(this.label2);
@@ -301,7 +300,7 @@
         public System.Windows.Forms.TextBox txtValorProduto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        public System.Windows.Forms.Button btnEditarProduto;
+        public System.Windows.Forms.Button btnAtualizarProduto;
         public System.Windows.Forms.Button btnExcluirProduto;
         public System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label3;

@@ -44,6 +44,9 @@
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnPesquisar = new System.Windows.Forms.Button();
+            this.txtCODCLIENTE = new System.Windows.Forms.TextBox();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnRetorno = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,6 +108,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView1.Size = new System.Drawing.Size(776, 438);
             this.dataGridView1.TabIndex = 42;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // ID
@@ -165,7 +169,7 @@
             this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnCadastro.Location = new System.Drawing.Point(572, 6);
+            this.btnCadastro.Location = new System.Drawing.Point(572, 12);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(216, 44);
             this.btnCadastro.TabIndex = 43;
@@ -216,6 +220,44 @@
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
+            // txtCODCLIENTE
+            // 
+            this.txtCODCLIENTE.Location = new System.Drawing.Point(12, 6);
+            this.txtCODCLIENTE.Name = "txtCODCLIENTE";
+            this.txtCODCLIENTE.Size = new System.Drawing.Size(100, 20);
+            this.txtCODCLIENTE.TabIndex = 47;
+            this.txtCODCLIENTE.Visible = false;
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
+            this.btnExcluir.FlatAppearance.BorderSize = 2;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.Location = new System.Drawing.Point(310, 12);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(46, 44);
+            this.btnExcluir.TabIndex = 48;
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnRetorno
+            // 
+            this.btnRetorno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRetorno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.btnRetorno.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
+            this.btnRetorno.FlatAppearance.BorderSize = 2;
+            this.btnRetorno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRetorno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRetorno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.btnRetorno.Location = new System.Drawing.Point(350, 12);
+            this.btnRetorno.Name = "btnRetorno";
+            this.btnRetorno.Size = new System.Drawing.Size(216, 44);
+            this.btnRetorno.TabIndex = 49;
+            this.btnRetorno.Text = "Retorno";
+            this.btnRetorno.UseVisualStyleBackColor = false;
+            this.btnRetorno.Click += new System.EventHandler(this.btnRetorno_Click);
+            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,6 +265,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.ClientSize = new System.Drawing.Size(800, 512);
+            this.Controls.Add(this.btnRetorno);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.txtCODCLIENTE);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtPesquisar);
@@ -250,5 +295,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn EMAIL;
         private System.Windows.Forms.DataGridViewTextBoxColumn PROFISSAO;
         private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
+        private System.Windows.Forms.TextBox txtCODCLIENTE;
+        private System.Windows.Forms.Button btnExcluir;
+        public System.Windows.Forms.Button btnRetorno;
     }
 }

@@ -85,29 +85,35 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
 
             Carregar_produtos();
         }
-
-        private void btnEditarProduto_Click(object sender, EventArgs e)
-        {
-            DataGridView dgv = dataGridView1;
-            
-            txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
-            txtNomeProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[1].Value);
-            txtValorProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
-
-        }
-
         private void btnExcluirProduto_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
             DataGridView dgv = dataGridView1;
 
-            txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
-            txtNomeProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[1].Value);
-            txtValorProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
+            if (dgv.Rows.Count == 0)
+            {
+                return;
+            }
+            if (string.IsNullOrEmpty(txtID.Text))
+            {
+                MessageBox.Show("Por favor, selecione um item da lista.", "Deletar dados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            int produtoSelecionado = Convert.ToInt32(txtID.Text);
+
+
+            if (MessageBox.Show("Tem certeza que deseja deletar os dados selecionados?", "Deletar Dados",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                CRUD.sql = "DELETE FROM PRODUTOS WHERE CODPRODUTO = " + produtoSelecionado + "";
+                CRUD.cmd = new MySqlCommand(CRUD.sql, CRUD.con);
+                CRUD.PerformCRUD(CRUD.cmd);
+
+                MessageBox.Show("Produto excluido com sucesso.", "Excluir Produto",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //loadData();
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -126,6 +132,19 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
             txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
             txtNomeProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[1].Value);
             txtValorProduto.Text = Convert.ToString(dgv.CurrentRow.Cells[2].Value);
+        }
+
+        private void btnAtualizarProduto_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtID.Text))
+            {
+                MessageBox.Show("Por favor, selecione um item da lista.", "Deletar dados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            CRUD.sql = "UPDATE PRODUTOS SET NOME_PRODUTO = @nome_produto, VALOR_PRODUTO = @valor_produto WHERE CODPRODUTO = " + txtID.Text + ";";
+            Executar(CRUD.sql, "Update");
         }
     }
 }
