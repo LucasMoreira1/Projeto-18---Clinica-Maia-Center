@@ -35,6 +35,8 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         {
             CRUD.sql = "UPDATE RETORNO SET TEXTO_RETORNO = @TEXTO_RETORNO WHERE CODCLIENTE = " + txtID.Text + ";";
             Executar(CRUD.sql, "Update");
+
+            this.Close();
         }
 
         private void FormRetorno_Load(object sender, EventArgs e)
@@ -48,10 +50,12 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
             dgv.AutoGenerateColumns = true;
             dgv.DataSource = dt;
 
-            if (dgv.Rows.Count == 0)
+            if (dgv.Rows.Count == 1)
             {
                 btnSalvar.Visible = true;
                 btnAtualizar.Visible = false;
+                dgv.Visible = false;
+                return;
             }
 
             btnSalvar.Visible = false;
@@ -67,6 +71,27 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         {
             CRUD.sql = "INSERT INTO RETORNO(CODCLIENTE, NOME, TEXTO_RETORNO) Values(@CODCLIENTE, @NOME, @TEXTO_RETORNO);";
             Executar(CRUD.sql, "Insert");
+
+            this.Close();
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
