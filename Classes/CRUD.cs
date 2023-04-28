@@ -9,7 +9,7 @@ namespace Projeto_18___Clinica_Maia_Center
     {
         private static string getConnectionString()
         {
-            string conString = "Server=108.167.132.199;Database=soluc963_CLINICA_MAIA_CENTER;Uid=soluc963_AGILITY_ADM; Pwd=d6o4aVt~%4$};Convert Zero Datetime=True";
+            string conString = "Server=108.167.132.199;Database=soluc963_CLINICA_MAIA_CENTER;Uid=soluc963_AGILITY_ADM; Pwd=!Parrudo292703;Convert Zero Datetime=True";
             return conString;
         }
 
