@@ -113,6 +113,12 @@
     <Compile Include="Forms\Atualizar\FormAtualizarCadastro.Designer.cs">
       <DependentUpon>FormAtualizarCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Atualizar\FormAtualizarCadastroComAbas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Atualizar\FormAtualizarCadastroComAbas.Designer.cs">
+      <DependentUpon>FormAtualizarCadastroComAbas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Atualizar\FormAtualizarInformacoesComplementares.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,12 @@
     </Compile>
     <Compile Include="Forms\Criar\FormAvaliacaoReflexopodal.Designer.cs">
       <DependentUpon>FormAvaliacaoReflexopodal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Criar\FormCadastroComAbas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Criar\FormCadastroComAbas.Designer.cs">
+      <DependentUpon>FormCadastroComAbas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Criar\FormInformacoesComplementares.cs">
       <SubType>Form</SubType>
@@ -200,11 +212,17 @@
     <EmbeddedResource Include="Forms\Atualizar\FormAtualizarCadastro.resx">
       <DependentUpon>FormAtualizarCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Atualizar\FormAtualizarCadastroComAbas.resx">
+      <DependentUpon>FormAtualizarCadastroComAbas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Atualizar\FormAtualizarInformacoesComplementares.resx">
       <DependentUpon>FormAtualizarInformacoesComplementares.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Criar\FormAvaliacaoReflexopodal.resx">
       <DependentUpon>FormAvaliacaoReflexopodal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Criar\FormCadastroComAbas.resx">
+      <DependentUpon>FormCadastroComAbas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Criar\FormInformacoesComplementares.resx">
       <DependentUpon>FormInformacoesComplementares.cs</DependentUpon>

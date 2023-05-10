@@ -1,4 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
+using Projeto_18___Clinica_Maia_Center.Forms.Atualizar;
+using Projeto_18___Clinica_Maia_Center.Forms.Criar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,8 +22,8 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         // Abrir formulário de cadastro.
         private void btnCadastro_Click(object sender, EventArgs e)
         {
-            FormCadastro formCadastro = new FormCadastro();
-            formCadastro.Show();
+            FormCadastroComAbas formCadastroComAbas = new FormCadastroComAbas();
+            formCadastroComAbas.Show();
         }
 
         private void FormClientes_Load(object sender, EventArgs e)
@@ -62,10 +64,13 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView dgv = dataGridView1;
-            FormAtualizarCadastro formAtualizarCadastro = new FormAtualizarCadastro();
-            formAtualizarCadastro.txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
+            FormAtualizarCadastroComAbas formAtualizarCadastroComAbas = new FormAtualizarCadastroComAbas();
+            formAtualizarCadastroComAbas.txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
+            formAtualizarCadastroComAbas.Show();
+            //FormAtualizarCadastro formAtualizarCadastro = new FormAtualizarCadastro();
+            //formAtualizarCadastro.txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
 
-            formAtualizarCadastro.Show();
+            //formAtualizarCadastro.Show();
         }
 
         private void txtPesquisar_KeyDown(object sender, KeyEventArgs e)

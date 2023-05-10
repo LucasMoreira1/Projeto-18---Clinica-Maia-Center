@@ -32,7 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.txtDataNasc = new System.Windows.Forms.MaskedTextBox();
             this.txtIndicacao = new System.Windows.Forms.TextBox();
             this.txtEstadoCivil = new System.Windows.Forms.TextBox();
@@ -77,12 +76,13 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtValorProduto = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txtCodProduto = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.txtNomeProduto = new System.Windows.Forms.TextBox();
-            this.txtValorProduto = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panelCadastro.SuspendLayout();
@@ -126,11 +126,11 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox1.Controls.Add(this.txtCPF);
             this.groupBox1.Controls.Add(this.txtDataNasc);
             this.groupBox1.Controls.Add(this.txtIndicacao);
             this.groupBox1.Controls.Add(this.txtEstadoCivil);
             this.groupBox1.Controls.Add(this.txtReligiao);
+            this.groupBox1.Controls.Add(this.txtCPF);
             this.groupBox1.Controls.Add(this.txtFilhos);
             this.groupBox1.Controls.Add(this.txtOcupacao);
             this.groupBox1.Controls.Add(this.label22);
@@ -155,17 +155,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados pessoais";
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtCPF.Location = new System.Drawing.Point(465, 124);
-            this.txtCPF.Mask = "000,000,000-00";
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(258, 26);
-            this.txtCPF.TabIndex = 7;
             // 
             // txtDataNasc
             // 
@@ -697,6 +686,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Serviço/Produto";
             // 
+            // txtValorProduto
+            // 
+            this.txtValorProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtValorProduto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtValorProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtValorProduto.Location = new System.Drawing.Point(629, 19);
+            this.txtValorProduto.Name = "txtValorProduto";
+            this.txtValorProduto.Size = new System.Drawing.Size(94, 26);
+            this.txtValorProduto.TabIndex = 8;
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -749,16 +749,16 @@
             this.txtNomeProduto.Size = new System.Drawing.Size(291, 26);
             this.txtNomeProduto.TabIndex = 2;
             // 
-            // txtValorProduto
+            // txtCPF
             // 
-            this.txtValorProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.txtValorProduto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtValorProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.txtValorProduto.Location = new System.Drawing.Point(629, 19);
-            this.txtValorProduto.Name = "txtValorProduto";
-            this.txtValorProduto.Size = new System.Drawing.Size(94, 26);
-            this.txtValorProduto.TabIndex = 8;
+            this.txtCPF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtCPF.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
+            this.txtCPF.Location = new System.Drawing.Point(465, 124);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(258, 26);
+            this.txtCPF.TabIndex = 9;
             // 
             // FormCadastro
             // 
@@ -838,9 +838,9 @@
         private System.Windows.Forms.TextBox txtFilhos;
         private System.Windows.Forms.TextBox txtOcupacao;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.MaskedTextBox txtDataNasc;
         public System.Windows.Forms.TextBox txtID;
         public System.Windows.Forms.TextBox txtValorProduto;
+        private System.Windows.Forms.TextBox txtCPF;
     }
 }
