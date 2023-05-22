@@ -82,10 +82,10 @@ namespace Projeto_18___Clinica_Maia_Center.Forms
         private void btnEditar_Click(object sender, EventArgs e)
         {
             DataGridView dgv = dataGridView1;
-            FormAtualizarCadastro formAtualizarCadastro = new FormAtualizarCadastro();
-            formAtualizarCadastro.txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
+            FormAtualizarCadastroComAbas formAtualizarCadastroComAbas = new FormAtualizarCadastroComAbas();
+            formAtualizarCadastroComAbas.txtID.Text = Convert.ToString(dgv.CurrentRow.Cells[0].Value);
 
-            formAtualizarCadastro.Show();
+            formAtualizarCadastroComAbas.Show();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

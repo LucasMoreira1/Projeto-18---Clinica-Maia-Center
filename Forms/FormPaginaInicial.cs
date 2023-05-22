@@ -131,5 +131,10 @@ namespace Projeto_18___Clinica_Maia_Center
         {
             OpenChildForm(new Forms.FormProduto());
         }
+
+        private void btnTeste_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Teste");
+        }
     }
 }
