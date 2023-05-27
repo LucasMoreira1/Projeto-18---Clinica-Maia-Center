@@ -49,7 +49,6 @@
             this.lblBemVindo = new System.Windows.Forms.Label();
             this.txtPermissaoLogin = new System.Windows.Forms.TextBox();
             this.txtNomeLogin = new System.Windows.Forms.TextBox();
-            this.btnTeste = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelFormTitulo.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -62,7 +61,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(7, 110);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(187, 41);
@@ -78,7 +77,7 @@
             this.panelFormTitulo.Controls.Add(this.label1);
             this.panelFormTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelFormTitulo.Location = new System.Drawing.Point(472, 0);
-            this.panelFormTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelFormTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.panelFormTitulo.Name = "panelFormTitulo";
             this.panelFormTitulo.Size = new System.Drawing.Size(1213, 135);
             this.panelFormTitulo.TabIndex = 7;
@@ -151,7 +150,7 @@
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(472, 437);
             this.panelLogo.TabIndex = 0;
@@ -162,7 +161,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(472, 437);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -174,7 +173,6 @@
             // 
             this.panelEsquerdo.AutoScroll = true;
             this.panelEsquerdo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.panelEsquerdo.Controls.Add(this.btnTeste);
             this.panelEsquerdo.Controls.Add(this.label4);
             this.panelEsquerdo.Controls.Add(this.btnVisualizarLogs);
             this.panelEsquerdo.Controls.Add(this.btnAgenda);
@@ -185,7 +183,7 @@
             this.panelEsquerdo.Controls.Add(this.panelLogo);
             this.panelEsquerdo.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEsquerdo.Location = new System.Drawing.Point(0, 0);
-            this.panelEsquerdo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelEsquerdo.Margin = new System.Windows.Forms.Padding(4);
             this.panelEsquerdo.Name = "panelEsquerdo";
             this.panelEsquerdo.Size = new System.Drawing.Size(472, 1077);
             this.panelEsquerdo.TabIndex = 6;
@@ -212,7 +210,7 @@
             this.btnVisualizarLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVisualizarLogs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.btnVisualizarLogs.Location = new System.Drawing.Point(0, 817);
-            this.btnVisualizarLogs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVisualizarLogs.Margin = new System.Windows.Forms.Padding(4);
             this.btnVisualizarLogs.Name = "btnVisualizarLogs";
             this.btnVisualizarLogs.Size = new System.Drawing.Size(472, 76);
             this.btnVisualizarLogs.TabIndex = 10;
@@ -229,7 +227,7 @@
             this.btnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.btnAgenda.Location = new System.Drawing.Point(0, 741);
-            this.btnAgenda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgenda.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.Size = new System.Drawing.Size(472, 76);
             this.btnAgenda.TabIndex = 9;
@@ -246,7 +244,7 @@
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.btnDashboard.Location = new System.Drawing.Point(0, 665);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(472, 76);
             this.btnDashboard.TabIndex = 8;
@@ -263,7 +261,7 @@
             this.btnProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdutos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.btnProdutos.Location = new System.Drawing.Point(0, 589);
-            this.btnProdutos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProdutos.Margin = new System.Windows.Forms.Padding(4);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Size = new System.Drawing.Size(472, 76);
             this.btnProdutos.TabIndex = 12;
@@ -280,7 +278,7 @@
             this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.btnClientes.Location = new System.Drawing.Point(0, 513);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(4);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(472, 76);
             this.btnClientes.TabIndex = 7;
@@ -297,7 +295,7 @@
             this.btnPaginaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPaginaInicial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
             this.btnPaginaInicial.Location = new System.Drawing.Point(0, 437);
-            this.btnPaginaInicial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPaginaInicial.Margin = new System.Windows.Forms.Padding(4);
             this.btnPaginaInicial.Name = "btnPaginaInicial";
             this.btnPaginaInicial.Size = new System.Drawing.Size(472, 76);
             this.btnPaginaInicial.TabIndex = 6;
@@ -318,7 +316,7 @@
             this.panelFormCentral.Controls.Add(this.txtNomeLogin);
             this.panelFormCentral.Controls.Add(this.dataGridView1);
             this.panelFormCentral.Location = new System.Drawing.Point(472, 137);
-            this.panelFormCentral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelFormCentral.Margin = new System.Windows.Forms.Padding(4);
             this.panelFormCentral.Name = "panelFormCentral";
             this.panelFormCentral.Size = new System.Drawing.Size(1213, 940);
             this.panelFormCentral.TabIndex = 8;
@@ -339,7 +337,7 @@
             // txtPermissaoLogin
             // 
             this.txtPermissaoLogin.Location = new System.Drawing.Point(1051, 142);
-            this.txtPermissaoLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPermissaoLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtPermissaoLogin.Name = "txtPermissaoLogin";
             this.txtPermissaoLogin.Size = new System.Drawing.Size(132, 22);
             this.txtPermissaoLogin.TabIndex = 5;
@@ -348,28 +346,11 @@
             // txtNomeLogin
             // 
             this.txtNomeLogin.Location = new System.Drawing.Point(1051, 110);
-            this.txtNomeLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomeLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomeLogin.Name = "txtNomeLogin";
             this.txtNomeLogin.Size = new System.Drawing.Size(132, 22);
             this.txtNomeLogin.TabIndex = 5;
             this.txtNomeLogin.Visible = false;
-            // 
-            // btnTeste
-            // 
-            this.btnTeste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.btnTeste.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTeste.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
-            this.btnTeste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeste.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(199)))), ((int)(((byte)(183)))));
-            this.btnTeste.Location = new System.Drawing.Point(0, 893);
-            this.btnTeste.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTeste.Name = "btnTeste";
-            this.btnTeste.Size = new System.Drawing.Size(472, 76);
-            this.btnTeste.TabIndex = 13;
-            this.btnTeste.Text = "Botao Teste";
-            this.btnTeste.UseVisualStyleBackColor = false;
-            this.btnTeste.Click += new System.EventHandler(this.btnTeste_Click);
             // 
             // FormPaginaInicial
             // 
@@ -382,7 +363,7 @@
             this.Controls.Add(this.panelFormCentral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormPaginaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clinica Maia Center - Estética e Saúde";
@@ -423,6 +404,5 @@
         private System.Windows.Forms.Label lblBemVindo;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.Button btnProdutos;
-        public System.Windows.Forms.Button btnTeste;
     }
 }
